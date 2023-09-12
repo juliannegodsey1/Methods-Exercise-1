@@ -4,8 +4,22 @@ namespace Methods_Exercise_1
 {
     internal class Program
     {
+        public static int Sum(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        public static int Multiply(int x, int y)
+        {
+            return x * y;
+        }
+
+
+
         static void Main(string[] args)
         {
+            var amountOfCars = Sum(2, 7);
+
             Console.WriteLine("Hello, what is your name?");
             var userName = Console.ReadLine();
 Console.WriteLine($"Hi {userName}! What is your favorite color?");
@@ -23,10 +37,15 @@ Console.WriteLine($"Hi {userName}! What is your favorite color?");
             Console.WriteLine($"Favorite Animal: {favAnimal}");
             Console.WriteLine("");
             Console.WriteLine($"Goodbye, {userName}!");
-
-
-
     
         }
+        
+       
+
+      
+      
+            int amountOfCars = Sum(2, 7);
+       
+
     }
 }
